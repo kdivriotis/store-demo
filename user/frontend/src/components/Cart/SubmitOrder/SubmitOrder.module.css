@@ -1,0 +1,10 @@
+.cart-order-btn {
+  margin: 16px auto;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  font-size: 16px;
+  font-family: var(--font-base);
+  border-radius: 10px;
+  word-wrap: break-word;
+}

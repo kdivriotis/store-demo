@@ -1,0 +1,23 @@
+.charts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px) {
+  .charts {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .charts {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}

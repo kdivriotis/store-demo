@@ -1,0 +1,196 @@
+.sidebar-open,
+.sidebar-close {
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  top: 36px;
+  right: -16px;
+  border: 2px solid var(--color-primary);
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.sidebar-close {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.sidebar_logo-open,
+.sidebar_logo-close {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.sidebar_logo-open h1,
+.sidebar_logo-close h1 {
+  transform-origin: center;
+  -webkit-transition: display 300ms ease-in-out;
+  -moz-transition: display 300ms ease-in-out;
+  -ms-transition: display 300ms ease-in-out;
+  -o-transition: display 300ms ease-in-out;
+  transition: display 300ms ease-in-out;
+  margin-top: 16px;
+  font-weight: 700;
+  font-family: var(--font-base);
+  font-size: 20px;
+}
+
+.sidebar_logo-close h1 {
+  visibility: hidden;
+}
+
+.sidebar_logo-open h1 {
+  color: var(--color-secondary);
+}
+
+.sidebar_logo-container-open,
+.sidebar_logo-container-close {
+  object-fit: contain;
+  object-position: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar_logo-container-open {
+  width: 200px;
+  height: 200px;
+}
+
+.sidebar_logo-container-close {
+  width: 32px;
+  height: 32px;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.sidebar_links-open,
+.sidebar_links-close {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 24px;
+  padding: 0 8px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.sidebar_links-open {
+  max-height: calc(100% - 244px - 44px - 24px);
+}
+
+.sidebar_links-close {
+  max-height: calc(100% - 32px - 44px - 24px);
+  justify-content: center;
+}
+
+.sidebar_links_list-close,
+.sidebar_links_list-open {
+  height: 100%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.sidebar_links_list-open {
+  width: 100%;
+}
+
+.sidebar_links_list-item-close,
+.sidebar_links_list-item-open {
+  padding: 8px;
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-family: var(--font-base);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.sidebar_links_list-item-open {
+  column-gap: 8px;
+}
+
+.sidebar_links_list-item_inactive {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.sidebar_links_list-item_inactive:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.sidebar_links_list-item_active {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.sidebar_links_list-item_logout {
+  background-color: var(--color-error);
+  color: var(--color-secondary);
+}
+
+.sidebar_links_list-item_logout:hover {
+  background-color: var(--color-error-hover);
+}
+
+.sidebar_links_list-item-close span,
+.sidebar_links_list-item-open span {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  transform-origin: left;
+}
+
+.sidebar_links_list-item-close span {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .sidebar_logo-open h1,
+  .sidebar_logo-close h1 {
+    font-size: 16px;
+  }
+
+  .sidebar_logo-container-open {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sidebar_links-open,
+  .sidebar_links-close {
+    margin-top: 16px;
+  }
+
+  .sidebar_links-open {
+    max-height: calc(100% - 128px - 44px - 16px);
+  }
+
+  .sidebar_links_list-item-close {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .sidebar_links_list-item-open {
+    column-gap: 4px;
+  }
+}

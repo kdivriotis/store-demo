@@ -1,0 +1,14 @@
+.orders_container_grid {
+  width: 100%;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (max-width: 1150px) {
+  .orders_container_grid {
+    margin: 12px auto;
+    gap: 12px;
+  }
+}

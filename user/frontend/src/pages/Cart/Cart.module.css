@@ -1,0 +1,28 @@
+.spinner {
+  max-width: min(400px, 80%);
+  max-height: min(400px, 80%);
+  margin: 0 auto;
+}
+
+.cart-container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media screen and (min-width: 2000px) {
+  .cart-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .cart-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cart-container {
+    width: 100%;
+  }
+}

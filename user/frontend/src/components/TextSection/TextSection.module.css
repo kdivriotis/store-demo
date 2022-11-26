@@ -1,0 +1,73 @@
+.text-section_left {
+  text-align: left;
+}
+
+.text-section_right {
+  text-align: right;
+}
+
+.text-section_title {
+  font-family: var(--font-base);
+  font-weight: 900;
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-size: 2.5rem;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+}
+
+.text-section_paragraph {
+  font-family: var(--font-base);
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+}
+
+.text-section_note {
+  font-family: var(--font-base);
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 2000px) {
+  .text-section_title {
+    font-size: 2.7rem;
+  }
+
+  .text-section_paragraph {
+    font-size: 1.35rem;
+  }
+
+  .text-section_note {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .text-section_title {
+    font-size: 2.25rem;
+  }
+
+  .text-section_paragraph {
+    font-size: 1.125rem;
+  }
+
+  .text-section_note {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-section_title {
+    font-size: 2rem;
+  }
+
+  .text-section_paragraph {
+    font-size: 1rem;
+  }
+
+  .text-section_note {
+    font-size: 0.9rem;
+  }
+}

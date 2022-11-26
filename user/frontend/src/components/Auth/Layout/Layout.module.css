@@ -1,0 +1,36 @@
+.layout-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout-container_inner {
+  width: 65%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (min-width: 2000px) {
+  .layout-container_inner {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .layout-container_inner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .layout-container_inner {
+    width: 100%;
+  }
+}

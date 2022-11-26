@@ -1,0 +1,12 @@
+.sidebar-icon {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .sidebar-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

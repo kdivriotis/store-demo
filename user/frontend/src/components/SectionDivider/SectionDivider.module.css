@@ -1,0 +1,22 @@
+.section-divider {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.section-divider hr {
+  height: 4px;
+  color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+@media screen and (max-width: 850px) {
+  .section-divider {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section-divider {
+    padding: 0.5rem 2rem;
+  }
+}

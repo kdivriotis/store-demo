@@ -1,0 +1,22 @@
+.details_header {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-base);
+  color: var(--color-primary);
+}
+
+.details_header h1 {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.details_header h3 {
+  font-weight: 600;
+  margin-top: 16px;
+  letter-spacing: 0.04em;
+  font-size: 24px;
+  line-height: 24px;
+  flex-grow: 1;
+}

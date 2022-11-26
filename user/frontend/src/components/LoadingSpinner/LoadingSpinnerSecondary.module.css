@@ -1,0 +1,12 @@
+.spinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner svg {
+  flex: 1;
+  fill: var(--color-secondary);
+  color: gray;
+}

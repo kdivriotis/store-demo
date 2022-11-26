@@ -1,0 +1,67 @@
+.widget {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  justify-content: space-between;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 100px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-family: var(--font-alt);
+  color: var(--color-disabled);
+}
+
+.counter {
+  font-size: 28px;
+  font-weight: 300;
+  font-family: var(--font-base);
+  color: var(--color-primary);
+}
+
+.link {
+  width: max-content;
+  font-size: 14px;
+  font-family: var(--font-base);
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-disabled);
+}
+
+.percentage {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.negative svg {
+  transform: rotate(180deg);
+}
+
+.icon {
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 5px;
+  align-self: flex-end;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}

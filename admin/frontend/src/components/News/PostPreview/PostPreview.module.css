@@ -1,0 +1,171 @@
+.post-header {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-base);
+  color: var(--color-primary);
+}
+
+.post-header h1 {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.post-header h3 {
+  font-weight: 600;
+  margin-top: 16px;
+  letter-spacing: 0.04em;
+  font-size: 24px;
+  line-height: 24px;
+  flex-grow: 1;
+}
+
+.post-image {
+  width: 100%;
+  min-height: 50vh;
+  height: 400px;
+  max-height: 100vh;
+  margin: 16px 0;
+}
+
+.post-content {
+  margin: 16px 0;
+  color: var(--color-primary);
+  font-family: var(--font-base);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-content h1 a,
+.post-content h2 a,
+.post-content h3 a,
+.post-content h4 a,
+.post-content h5 a,
+.post-content h6 a {
+  display: none;
+}
+
+.post-content h1 {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  font-size: 40px;
+}
+
+.post-content h2 {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  font-size: 36px;
+}
+
+.post-content h3 {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 32px;
+}
+
+.post-content h4 {
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  font-size: 28px;
+}
+
+.post-content h5 {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 24px;
+}
+
+.post-content h6 {
+  font-weight: 550;
+  letter-spacing: 0.04em;
+  font-size: 22px;
+}
+
+.post-content p,
+.post-content ul li,
+.post-content ol li {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  min-height: max-content;
+}
+
+.post-content p a {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.post-content p a:hover {
+  text-decoration: none;
+  background-color: var(--color-primary-hover);
+  color: var(--color-secondary);
+}
+
+@media screen and (max-width: 1150px) {
+  .post-content h1 {
+    font-size: 36px;
+  }
+
+  .post-content h2 {
+    font-size: 32px;
+  }
+
+  .post-content h3 {
+    font-size: 28px;
+  }
+
+  .post-content h4 {
+    font-size: 24px;
+  }
+
+  .post-content h5 {
+    font-size: 20px;
+  }
+
+  .post-content h6 {
+    font-size: 18px;
+  }
+
+  .post-content p,
+  .post-content ul li,
+  .post-content ol li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .post-content h1 {
+    font-size: 34px;
+  }
+
+  .post-content h2 {
+    font-size: 30px;
+  }
+
+  .post-content h3 {
+    font-size: 26px;
+  }
+
+  .post-content h4 {
+    font-size: 22px;
+  }
+
+  .post-content h5 {
+    font-size: 20px;
+  }
+
+  .post-content h6 {
+    font-size: 18px;
+  }
+
+  .post-content p,
+  .post-content ul li,
+  .post-content ol li {
+    font-size: 16px;
+  }
+}

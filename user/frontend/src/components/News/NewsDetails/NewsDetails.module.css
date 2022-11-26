@@ -1,0 +1,13 @@
+.spinner {
+  max-width: min(400px, 80%);
+  max-height: min(400px, 80%);
+  margin: 0 auto;
+}
+
+.article-image {
+  width: 100%;
+  min-height: 50vh;
+  height: 400px;
+  max-height: 100vh;
+  margin: 16px 0;
+}

@@ -1,0 +1,10 @@
+.register_message {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-family: var(--font-base);
+  color: var(--color-secondary);
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,0 +1,25 @@
+.news_pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.spinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner svg {
+  max-width: min(200px, 90%);
+  max-height: min(200px, 90%);
+  flex: 1;
+  fill: var(--color-primary);
+  color: gray;
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}

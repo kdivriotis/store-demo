@@ -1,0 +1,16 @@
+.spinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  overflow: hidden;
+}
+
+.spinner svg {
+  width: min(40vh, 40vw);
+  height: min(40vh, 40vw);
+  flex: 1;
+  fill: var(--color-primary);
+  color: gray;
+}

@@ -1,0 +1,17 @@
+.widgets {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  .widgets {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .widgets {
+    flex-direction: column;
+  }
+}

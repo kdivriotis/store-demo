@@ -1,0 +1,121 @@
+.request-container {
+  margin-top: 16px;
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.request-store {
+  justify-self: flex-start;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 8px;
+  font-family: var(--font-base);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+}
+
+.request-url {
+  flex-grow: 1;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 8px;
+  font-family: var(--font-alt);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  font-style: italic;
+}
+
+.request-actions {
+  justify-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+}
+
+.request-actions button {
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  font-family: var(--font-base);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.request-actions button:disabled {
+  cursor: not-allowed;
+  background-color: var(--color-disabled);
+  color: var(--color-secondary);
+}
+
+.request-actions_primary {
+  border: 0;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.request-actions_error {
+  border: 0;
+  background-color: var(--color-error);
+  color: var(--color-secondary);
+}
+
+.request-actions_error:hover {
+  background-color: var(--color-error-hover);
+}
+
+.request-actions_primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+@media screen and (max-width: 1150px) {
+  .request-container {
+    gap: 8px;
+  }
+
+  .request-store {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .request-url {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .request-actions {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .request-actions button {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .request-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .request-actions {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

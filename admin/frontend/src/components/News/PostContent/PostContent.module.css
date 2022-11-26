@@ -1,0 +1,11 @@
+.editor-container {
+  margin: 16px 0;
+  width: 100%;
+}
+
+.editor-container label {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+}

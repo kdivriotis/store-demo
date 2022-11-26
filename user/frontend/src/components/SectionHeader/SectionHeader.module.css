@@ -1,0 +1,28 @@
+.section-header {
+  width: 100%;
+}
+
+.section-header_text {
+  display: flex;
+  color: var(--color-primary);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header_text::before,
+.section-header_text::after {
+  background-color: var(--color-primary);
+  content: "";
+  height: 1px;
+  flex: 1;
+  min-width: 20%;
+}
+
+.section-header_text::before {
+  margin-right: 1rem;
+}
+
+.section-header_text::after {
+  margin-left: 1rem;
+}

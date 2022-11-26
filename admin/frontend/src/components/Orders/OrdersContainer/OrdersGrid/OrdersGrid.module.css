@@ -1,0 +1,18 @@
+.orders_container_grid {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1150px) {
+  .orders_container_grid {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .orders_container_grid {
+    gap: 8px;
+  }
+}

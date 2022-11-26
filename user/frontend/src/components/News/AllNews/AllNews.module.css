@@ -1,0 +1,12 @@
+.news_pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.spinner {
+  max-width: min(400px, 80%);
+  max-height: min(400px, 80%);
+  margin: 0 auto;
+}

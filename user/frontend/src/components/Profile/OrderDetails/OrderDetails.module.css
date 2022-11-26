@@ -1,0 +1,38 @@
+.order-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.order-card_back {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.order-card_back svg {
+  color: var(--color-primary);
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.order-card_back:hover svg {
+  color: var(--color-primary-hover);
+}
+
+@media screen and (max-width: 1150px) {
+  .order-card {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .order-card {
+    gap: 16px;
+  }
+}

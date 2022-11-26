@@ -1,0 +1,15 @@
+.actions-container {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.action-button {
+  padding: 16px;
+  font-family: var(--font-base);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  border-radius: 10px;
+}

@@ -1,0 +1,65 @@
+.our-pies-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../../../assets/our-pies-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.our-pies-section_spacer {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.our-pies-section_info {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.our-pies-section_info_btn {
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  border: solid 1px var(--color-primary-faded);
+  background-color: var(--color-primary);
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--color-secondary);
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -ms-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.our-pies-section_info_btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+@media screen and (max-width: 650px) {
+  .our-pies-section {
+    background-position: right 50%;
+  }
+
+  .our-pies-section_info_btn {
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+
+  .our-pies-section_spacer {
+    display: none;
+  }
+}
